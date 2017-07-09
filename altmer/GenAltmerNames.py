@@ -3,7 +3,18 @@ import random
 def genName(gender):
     firstName = genFirstName(gender)
 
-    return firstName
+    familyName = genFamilyName()
+
+    return firstName, familyName
+
+def genFamilyName():
+    prefixes = ['Ad', 'Caem', 'Elsin', 'Gae', 'Gray', 'High', 'Jor', 'Lareth', 'Silin', 'Storm', 'Throm']
+    suffixes = ['aire', 'al', 'binder', 'ian', 'ire', 'ius', 'lock', 'or', 'orin', 'thar', 'us', 'watch']
+
+    prefix = random.choice(prefixes)
+    suffix = random.choice(suffixes)
+
+    return prefix + suffix
 
 def genFirstName(gender):
     prefix = ''
