@@ -3,6 +3,8 @@ import random
 def genName(gender):
     firstName = genFirstName(gender)
 
+    return firstName
+
 def genFirstName(gender):
     prefix = ''
     suffix = ''
