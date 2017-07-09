@@ -17,7 +17,8 @@ def genName(gender):
         prefix = random.choice(malePrefixes)
         suffix = random.choice(maleSuffixes)
 
-    return prefix + suffix
+    firstName = prefix + suffix
+    return firstName
 
 gender = input('Is your character male or female? (m/f): ')
 if gender == 'm' or gender == 'f':
