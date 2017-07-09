@@ -41,6 +41,7 @@ def genFirstName(gender):
 
 gender = input('Is your character male or female? (m/f): ')
 if gender == 'm' or gender == 'f':
-    print(genName(gender))
+    firstName, familyName = genName(gender)
+    print('%s %s' % (firstName, familyName))
 else:
     gender = input('Is your character male or female? (m/f): ')
