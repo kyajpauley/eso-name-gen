@@ -1,10 +1,12 @@
 import random
 
+
 def genName(gender):
     firstName = genFirstName(gender)
     familyName = genFamilyName()
 
     return firstName, familyName
+
 
 def genFamilyName():
     prefixes = ['Ad', 'Caem', 'Elsin', 'Gae', 'Gray', 'High', 'Jor', 'Lareth', 'Silin', 'Storm', 'Throm']
@@ -14,6 +16,7 @@ def genFamilyName():
     suffix = random.choice(suffixes)
 
     return prefix + suffix
+
 
 def genFirstName(gender):
     prefix = ''
@@ -35,10 +38,9 @@ def genFirstName(gender):
     firstName = prefix + suffix
     return firstName
 
+
 gender = input('Is your character male or female? (m/f): ')
 if gender == 'm' or gender == 'f':
     print(genName(gender))
 else:
     gender = input('Is your character male or female? (m/f): ')
-
-
