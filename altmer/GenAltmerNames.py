@@ -2,7 +2,6 @@ import random
 
 def genName(gender):
     firstName = genFirstName(gender)
-
     familyName = genFamilyName()
 
     return firstName, familyName
