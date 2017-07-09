@@ -19,7 +19,7 @@ def genName(gender):
 
     return prefix + suffix
 
-gender = None
+gender = input('Is your character male or female? (m/f): ')
 if gender == 'm' or gender == 'f':
     print(genName(gender))
 else:
